@@ -23,6 +23,28 @@ Run `docker-compose -f docker-compose.yaml up` to use it with Docker compose.
 
 ## Use `pdfGPT` on Production using [langchain-serve](https://github.com/jina-ai/langchain-serve)
 
+#### Local environment
+1. Run `source 200pasteru\bin\active`
+
+#### For Mac M1
+1. Clone this repo
+1. In this repo, edit the requirements.txt found below
+1. pip3 install -r requirements.txt
+1. Run the app python3 app.py
+1. Access to http://localhost:7860
+
+```
+gradio==3.27.0
+numpy==1.23.5
+openai==0.27.4
+PyMuPDF==1.22.1
+matplotlib==3.7.1
+scikit_learn==1.2.2
+scipy==1.10.1
+tensorflow-macos==2.12.0
+tensorflow_hub==0.13.0
+```
+
 #### Local playground
 1. Run `lc-serve deploy local api` on one terminal to expose the app as API using langchain-serve.
 2. Run `python app.py` on another terminal for a local gradio playground.
